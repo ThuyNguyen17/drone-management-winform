@@ -1,0 +1,9 @@
+# Ignore Visual Studio files
+.vs/
+*.user
+*.suo
+*.csproj.user
+
+# Ignore build artifacts
+bin/
+obj/
