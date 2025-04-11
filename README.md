@@ -1,8 +1,101 @@
-# Windows_Programing
-Nơi chứa code cho môn lập trình windows
-Hiện nay, một công ty chuyên cung cấp dịch vụ cho thuê drone camera nhằm đáp ứng các nhu cầu đa dạng và ngày càng gia tăng của khách hàng. 
-Các ứng dụng chính của dịch vụ này bao gồm tổ chức sự kiện như thời trang, âm nhạc, lễ hội, quay phim từ trên cao, khảo sát địa hình, thiết kế, và giám sát công trình như tòa nhà cao tầng hay hệ thống cáp quang. Đối tượng khách hàng được phân thành hai nhóm chính: cá nhân và tổ chức. Thông tin của từng khách hàng được quản lý chi tiết, bao gồm tên, địa chỉ, loại khách hàng (cá nhân hoặc tổ chức), và thông tin liên hệ như số điện thoại và email.
-Quy trình cho thuê hoặc mua drone bắt đầu bằng việc khách hàng cung cấp yêu cầu cụ thể. Sau đó, hệ thống tự động phân tích và đề xuất các giải pháp phù hợp, bao gồm loại drone, số lượng cần thiết, và các tùy chọn dịch vụ đi kèm. Mỗi giao dịch sẽ được ghi nhận thông qua một hợp đồng. Hợp đồng bao gồm các thông tin quan trọng như mã hợp đồng (để định danh), mã khách hàng, loại hợp đồng (thuê hoặc mua), ngày bắt đầu, ngày kết thúc (nếu là hợp đồng thuê), tổng giá trị hợp đồng, và trạng thái hợp đồng (đang xử lý, hoàn thành, hủy).
-Trong hợp đồng, khách hàng có thể yêu cầu nhiều drone khác nhau, mỗi chiếc drone có các thuộc tính cụ thể như mã drone, tên drone, loại drone (quay phim, khảo sát, tạo hình), giá thuê/mua theo đơn vị thời gian, tình trạng hiện tại của drone (sẵn sàng, đang thuê, cần bảo trì). Ngoài ra, chính sách bồi thường thiệt hại được áp dụng để xử lý các trường hợp thiết bị bị hỏng hóc trong thời gian sử dụng. Các mức độ thiệt hại (nhẹ, trung bình, nặng) được định nghĩa rõ ràng cùng với tỷ lệ bồi thường tương ứng (ví dụ: 10%, 50%, hoặc 100% giá trị thiết bị). Hệ thống cũng hỗ trợ các chính sách khuyến mãi tự động, như giảm giá cho khách hàng lâu năm, khách hàng thuê với số lượng lớn hoặc thuê trong thời gian dài.
-Bên cạnh việc quản lý thiết bị và hợp đồng, đội ngũ kỹ thuật đóng vai trò quan trọng trong việc đảm bảo chất lượng dịch vụ. Mỗi nhân viên kỹ thuật được quản lý thông qua các thông tin như mã nhân viên, tên, vai trò (lắp đặt, bảo trì, tư vấn sử dụng drone), và trạng thái làm việc (đang bận, sẵn sàng). Đội ngũ này chịu trách nhiệm hỗ trợ lắp đặt thiết bị tại chỗ, thực hiện bảo trì định kỳ hoặc khắc phục sự cố trong quá trình sử dụng, cũng như tư vấn sử dụng drone hiệu quả nhất.
-Hệ thống quản lý dịch vụ cho thuê drone camera được thiết kế để tự động hóa các quy trình, giúp giảm thiểu sai sót thủ công và tối ưu hóa hiệu suất vận hành. Mỗi hợp đồng có thể liên quan đến nhiều drone và yêu cầu sự hỗ trợ của nhiều nhân viên kỹ thuật
+# 🚁 Drone Management System - Windows Programming
+
+> 📚 A project developed for the *Windows Programming* course.  
+> 🛠️ Built with **C# WinForms** for managing a professional drone rental and sales service.
+
+## 📌 Project Description
+
+This application simulates the workflow of a company that provides **drone camera rental and sales services** for a wide range of customer needs, such as:
+
+- **Events** (fashion shows, music concerts, festivals)
+- **Aerial cinematography**
+- **Terrain surveying and construction site monitoring**
+- **Design and cable infrastructure supervision**
+
+Customers are classified into two types:
+- **Individuals**
+- **Organizations**
+
+Each customer record includes:
+- Name
+- Address
+- Customer type
+- Contact details (phone number and email)
+
+
+## 🔄 Rental & Purchase Process
+
+1. **Customer submits a request** for renting or purchasing drones.
+2. The system **analyzes and recommends** suitable drone types, quantities, and service options.
+3. A **contract** is created containing:
+   - Contract ID
+   - Customer ID
+   - Contract type (rent or purchase)
+   - Start and end dates
+   - Total value
+   - Contract status (processing, completed, or canceled)
+
+---
+
+## 📦 Drone Information
+
+Each drone has:
+- Drone ID
+- Name
+- Type (e.g., filming, surveying, formation flying)
+- Rental/Purchase price
+- Current status (available, rented, maintenance)
+
+---
+
+## ⚠️ Damage & Compensation Policy
+
+- Damage levels: **Minor**, **Moderate**, **Severe**
+- Compensation rates: **10%**, **50%**, or **100%** of the drone's value
+- Policy automatically applies based on damage reports
+
+---
+
+## 🎁 Promotion System
+
+The system supports automatic discount programs for:
+- Loyal customers
+- Bulk rentals
+- Long-term rentals
+
+---
+
+## 🧑‍🔧 Technical Staff Management
+
+Technical employees are managed by:
+- Staff ID
+- Name
+- Role (installation, maintenance, consultation)
+- Work status (busy, available)
+
+Their responsibilities include:
+- On-site drone setup
+- Regular maintenance
+- Technical support and usage consultation
+
+
+## 🚀 Features
+
+- 📋 Contract management
+- 📦 Drone inventory tracking
+- 🧑‍💼 Customer classification and records
+- ⚙️ Technical staff assignment
+- 📊 Automated analytics and business logic
+- 🔐 Windows Form UI with intuitive user experience
+
+
+## 💻 Technologies Used
+
+- **C#**
+- **WinForms**
+- **ADO.NET** for data access
+- **MSSQL** (local database)
+
+
+## 📁 How to Run
+Clone the repository: git clone https://github.com/your-username/drone-management-winform.git
